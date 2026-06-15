@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fi">
 <head>
-<meta charset="utf-8"
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sivuverstas — Edulliset verkkosivut pienyrityksille</title>
 <meta name="description" content="Edulliset, kiinteähintaiset verkkosivut pienyrityksille. Kokeile: kuvaile yrityksesi ja näe demo sekunneissa. Valmis viikossa." />
@@ -203,11 +203,10 @@ footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:va
 
 <header>
   <div class="wrap nav">
-    <div class="logo">Sivu<span>studio</span></div>
+    <div class="logo">Sivu<span>verstas</span></div>
     <nav class="navlinks">
       <a href="#hinnasto">Hinnasto</a>
       <a href="#paketti">Rakenna paketti</a>
-      <a href="#referenssit">Referenssit</a>
       <a href="#faq">UKK</a>
       <a href="#yhteys" class="btn navcta" style="padding:9px 16px">Ota yhteyttä</a>
     </nav>
@@ -370,18 +369,6 @@ footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:va
   </div>
 </section>
 
-<!-- REFERENSSIT -->
-<section class="block" id="referenssit" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-  <div class="wrap">
-    <div class="shead"><div class="eyebrow">Referenssit</div><h2>Tehtyjä töitä.</h2><p>Korvaa nämä omilla projekteillasi kuvineen ja linkkeineen.</p></div>
-    <div class="refs">
-      <div class="ref"><div class="thumb">[ Kuvakaappaus ]</div><div class="body"><h3>Esimerkki Oy</h3><p>Verkkosivut palveluyritykselle — uusi ilme ja yhteydenotot kasvuun.</p></div></div>
-      <div class="ref"><div class="thumb">[ Kuvakaappaus ]</div><div class="body"><h3>Esimerkki 2</h3><p>Ravintolan sivut ja ajanvaraus.</p></div></div>
-      <div class="ref"><div class="thumb">[ Kuvakaappaus ]</div><div class="body"><h3>Esimerkki 3</h3><p>Verkkokauppa pienelle valmistajalle.</p></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- HENKILÖ -->
 <section class="block" id="henkilo">
   <div class="wrap">
@@ -393,7 +380,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:va
         <p style="color:var(--muted);max-width:520px">Teen edullisia, nopeita ja näyttäviä verkkosivuja pienyrityksille. Yksi ihminen, suora yhteys — ei toimistobyrokratiaa, ei piilokuluja. Kerro tarpeesi, niin hoidan loput.</p>
         <div class="pmeta">
           <a href="tel:+358406614983">📞 040 661 4983</a>
-          <a href="mailto:sivuverstas@gmail.com">✉️ sivuverstas@gmail.com.com</a>
+          <a href="mailto:sivuverstas@gmail.com">✉️ sivuverstas@gmail.com</a>
           <a href="https://www.instagram.com/sivuverstas/" target="_blank" rel="noopener">Instagram</a>
           <a href="#" target="_blank" rel="noopener">TikTok</a>
           <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">LinkedIn</a>
@@ -449,7 +436,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:va
         <div class="quick">
           <a href="tel:+358401234567">📞 040 123 4567</a>
           <a href="https://wa.me/358406614983" target="_blank" rel="noopener">💬 WhatsApp</a>
-          <a href="mailto:sivu@sivustudio.fi">✉️ sivu@sivustudio.fi</a>
+          <a href="mailto:sivuverstas@gmail.com">✉️ sivuverstas@gmail.com</a>
           <a href="#" target="_blank" rel="noopener">📅 Varaa puheluaika</a>
         </div>
         <div class="promise">Vastaan yhteydenottoihin yleensä muutaman tunnin sisällä arkisin.</div>
@@ -468,7 +455,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:va
 
 <footer>
   <div class="wrap fcols">
-    <div>© <span id="yr"></span> Sivustudio · Y-tunnus 3411305-4</div>
+    <div>© <span id="yr"></span> Sivuverstas · Y-tunnus 3411305-4</div>
     <div>
       <a href="#hinnasto">Hinnasto</a>
       <a href="#faq">UKK</a>
@@ -571,14 +558,23 @@ baRange.addEventListener("input",function(){baMove(this.value)});baMove(50);
 /* ---------- FAQ: vain yksi auki kerrallaan ---------- */
 document.querySelectorAll(".qa").forEach(function(d){d.addEventListener("toggle",function(){if(d.open){document.querySelectorAll(".qa").forEach(function(o){if(o!==d)o.open=false})}})});
 
-/* ---------- Contact form ---------- */
+/* ---------- Contact form (Formspree) ---------- */
+/* VAIHDA alla oleva osoite omaan Formspree-osoitteeseesi:
+   formspree.io → New Form → kopioi "https://formspree.io/f/xxxxx" tähän */
+var FORM_ENDPOINT="https://formspree.io/f/meewnelg";
 $("f_send").onclick=async function(){
   var name=$("f_name").value.trim(),email=$("f_email").value.trim(),msg=$("f_msg").value.trim();
   if(!name||!validEmail(email)||!msg){alert("Täytä nimi, kelvollinen sähköposti ja viesti.");return}
-  var payload={name:name,email:email,phone:$("f_phone").value.trim(),pkg:$("f_pkg").value,message:msg};
+  var payload={nimi:name,email:email,puhelin:$("f_phone").value.trim(),paketti:$("f_pkg").value,viesti:msg};
   this.disabled=true;this.textContent="Lähetetään…";
-  try{await fetch("/api/contact",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)})}catch(e){}
-  $("formfields").style.display="none";$("formok").style.display="block";
+  try{
+    var r=await fetch(FORM_ENDPOINT,{method:"POST",headers:{"content-type":"application/json","Accept":"application/json"},body:JSON.stringify(payload)});
+    if(!r.ok)throw new Error("fail");
+    $("formfields").style.display="none";$("formok").style.display="block";
+  }catch(e){
+    alert("Lähetys ei onnistunut. Yritä uudelleen tai laita sähköpostia suoraan: sivuverstas@gmail.com");
+    this.disabled=false;this.textContent="Lähetä viesti";
+  }
 };
 
 document.getElementById("yr").textContent=new Date().getFullYear();
