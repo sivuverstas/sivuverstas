@@ -1,0 +1,9 @@
+{
+  "name": "demo-funnel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-demogeneraattori paikallisyritysten verkkosivumyyntiin",
+  "engines": {
+    "node": ">=18"
+  }
+}
