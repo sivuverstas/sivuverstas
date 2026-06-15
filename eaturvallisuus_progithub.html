@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EA-Turvallisuuskyltti Oy | Turvallisuuskyltit ja asennus koko Suomeen — ilmainen kartoitus</title>
+<meta name="description" content="Taloyhtiöiden ja kiinteistöjen turvallisuuskyltit avaimet käteen -palveluna. Ilmainen kartoitus, määräysten mukaiset jälkivalaisevat kyltit ja ammattiasennus koko Suomessa.">
+<meta name="keywords" content="turvallisuuskyltit, kerrosnumerokyltit, poistumistiekyltit, väestönsuojakyltit, kylttien asennus, taloyhtiö, isännöitsijä">
+<meta property="og:title" content="EA-Turvallisuuskyltti Oy — Turvallisuuskyltit avaimet käteen">
+<meta property="og:description" content="Ilmainen kartoitus, kyltit ja asennus yhdellä yhteydenotolla. Koko Suomi.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://eaturvallisuus.fi">
+<meta property="og:image" content="https://eaturvallisuus.fi/wp-content/uploads/2023/03/Turvallisuuskyltti-Oy-Valkoinen-333.png">
+<link rel="canonical" href="https://eaturvallisuus.fi/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "EA-Turvallisuuskyltti Oy",
+  "description": "Turvallisuuskylttien kartoitus, toimitus ja asennus taloyhtiöihin ja kiinteistöihin koko Suomessa.",
+  "url": "https://eaturvallisuus.fi",
+  "telephone": "+358401290801",
+  "email": "tom@eaturvallisuus.fi",
+  "areaServed": "FI",
+  "foundingDate": "2022",
+  "knowsAbout": ["turvallisuuskyltit","kerrosnumerot","poistumistiemerkinnät","väestönsuojakyltit","palomerkinnät"]
+}
+</script>
+<style>
+:root{
+  --green:#0b6b46;
+  --green-dark:#07402a;
+  --green-darker:#052e1f;
+  --glow:#3ddc7a;
+  --ink:#15201b;
+  --body:#43514a;
+  --bg:#ffffff;
+  --bg-soft:#f4f7f5;
+  --line:#e2e8e4;
+  --star:#00b67a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+img{max-width:100%;display:block}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--green)}
+h2.sec-title{font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-.5px;line-height:1.15;margin-bottom:14px}
+.sec-sub{color:var(--body);font-size:17px;max-width:620px}
+section{padding:84px 0}
+.btn{display:inline-block;padding:15px 30px;border-radius:8px;font-weight:700;font-size:15.5px;text-decoration:none;transition:all .2s;border:none;cursor:pointer}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-dark);transform:translateY(-1px)}
+.btn-glow{background:var(--glow);color:var(--green-darker)}
+.btn-glow:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn-outline{border:1.5px solid var(--line);color:var(--ink);background:#fff}
+.btn-outline:hover{border-color:var(--green);color:var(--green)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--green-darker);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo img{height:40px;width:auto}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{color:#cfe3d8;text-decoration:none;font-size:14.5px;font-weight:600;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--glow);color:var(--green-darker)!important;padding:10px 20px;border-radius:7px;font-weight:800!important}
+@media(max-width:860px){.nav-links a:not(.nav-cta){display:none}}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%);padding:84px 0 70px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+@media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+.hero h1{font-size:clamp(34px,4.8vw,54px);line-height:1.07;font-weight:850;letter-spacing:-1.2px;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero .lead{font-size:18.5px;color:var(--body);margin-bottom:14px;max-width:520px}
+.hero-points{list-style:none;margin:22px 0 30px}
+.hero-points li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;font-weight:600;margin-bottom:10px}
+.hero-points li::before{content:"✓";color:var(--green);font-weight:800;flex-shrink:0}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-img{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px rgba(7,64,42,.14);background:#fff}
+.hero-img img{width:100%}
+.hero-img figcaption{font-size:12.5px;color:#7d8a83;padding:10px 16px;border-top:1px solid var(--line)}
+
+/* GLOW DEMO */
+.glow-sec{background:var(--green-darker);color:#fff;padding:84px 0}
+.glow-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
+@media(max-width:880px){.glow-grid{grid-template-columns:1fr}}
+.glow-sec .eyebrow{color:var(--glow)}
+.glow-sec .eyebrow::before{background:var(--glow)}
+.glow-sec h2{color:#fff}
+.glow-sec .sec-sub{color:#a8c5b6}
+.demo{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:26px}
+.demo-stage{border-radius:10px;padding:36px 18px;display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;transition:background .7s ease;background:#e9edea;min-height:180px}
+.demo.dark .demo-stage{background:#020604}
+.sign{width:84px;height:84px;border-radius:8px;transition:box-shadow .7s ease,filter .7s ease}
+.sign svg{width:100%;height:100%;border-radius:8px}
+.demo.dark .sign{box-shadow:0 0 24px rgba(61,220,122,.6),0 0 70px rgba(61,220,122,.28);filter:brightness(1.3) saturate(1.35)}
+.demo-bar{display:flex;align-items:center;justify-content:space-between;margin-top:20px;gap:12px;flex-wrap:wrap}
+.demo-label{font-size:13.5px;color:#a8c5b6}
+.demo-label strong{color:#fff}
+.switch{display:inline-flex;align-items:center;gap:10px;cursor:pointer;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:9px 18px;color:#fff;font-size:13.5px;font-weight:700;transition:border-color .2s}
+.switch:hover{border-color:var(--glow)}
+.switch .dot{width:10px;height:10px;border-radius:50%;background:#f5c842;box-shadow:0 0 10px rgba(245,200,66,.85);transition:all .4s}
+.demo.dark .switch .dot{background:#26352d;box-shadow:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* AVAIMET KÄTEEN BAND */
+.band{background:var(--green);color:#fff;padding:64px 0}
+.band-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:760px){.band-grid{grid-template-columns:1fr}}
+.band-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:28px}
+.band-card .num{width:40px;height:40px;border-radius:50%;background:#fff;color:var(--green);display:grid;place-items:center;font-weight:800;margin-bottom:16px}
+.band-card h3{font-size:18px;font-weight:800;margin-bottom:8px}
+.band-card p{font-size:14.5px;color:#dcefe6}
+.band-head{text-align:center;margin-bottom:40px}
+.band-head h2{font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-.5px;margin-bottom:10px}
+.band-head p{color:#dcefe6;font-size:17px}
+.band-head .free{display:inline-block;background:var(--glow);color:var(--green-darker);font-weight:800;font-size:14px;padding:6px 16px;border-radius:99px;margin-bottom:18px;letter-spacing:.5px}
+.band-cta{text-align:center;margin-top:36px}
+
+/* KYLTIT */
+.kyltit{background:#fff}
+.k-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:8px}
+.k-tile{background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:20px 14px;text-align:center;transition:all .2s}
+.k-tile:hover{border-color:var(--green);background:#fff;box-shadow:0 10px 24px rgba(7,64,42,.08);transform:translateY(-2px)}
+.k-tile .ic{font-size:24px;margin-bottom:8px}
+.k-tile .nm{font-size:14px;font-weight:700}
+.k-note{margin-top:28px;display:flex;align-items:center;gap:14px;background:var(--green-darker);color:#fff;border-radius:12px;padding:20px 24px;font-size:15px}
+.k-note .pulse{width:12px;height:12px;border-radius:50%;background:var(--glow);flex-shrink:0;box-shadow:0 0 0 0 rgba(61,220,122,.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(61,220,122,.5)}70%{box-shadow:0 0 0 12px rgba(61,220,122,0)}100%{box-shadow:0 0 0 0 rgba(61,220,122,0)}}
+
+/* VIDEO */
+.video-sec{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:860px){.video-grid{grid-template-columns:1fr}}
+.vframe{position:relative;border-radius:14px;overflow:hidden;background:var(--green-darker);aspect-ratio:16/9;border:1px solid var(--line);box-shadow:0 24px 60px rgba(7,64,42,.16);cursor:pointer}
+.vframe .vbg{position:absolute;inset:0;display:grid;place-items:center;opacity:.35}
+.vframe .vbg img{width:70%;filter:saturate(.8)}
+.vplay{position:absolute;inset:0;display:grid;place-items:center}
+.vplay .pbtn{width:84px;height:84px;border-radius:50%;background:var(--glow);display:grid;place-items:center;box-shadow:0 12px 36px rgba(61,220,122,.4);transition:transform .2s}
+.vframe:hover .pbtn{transform:scale(1.08)}
+.vplay .pbtn::before{content:"";border-style:solid;border-width:14px 0 14px 24px;border-color:transparent transparent transparent var(--green-darker);margin-left:5px}
+.vtag{position:absolute;left:16px;bottom:14px;background:rgba(0,0,0,.55);color:#fff;font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:6px}
+.vlist{list-style:none;margin-top:22px}
+.vlist li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:15.5px}
+.vlist li::before{content:"▸";color:var(--green);font-weight:800;flex-shrink:0}
+
+/* TRUSTPILOT */
+.tp-sec{background:#fff}
+.tp-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:36px}
+.tp-badge{display:flex;align-items:center;gap:10px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:14px 20px}
+.tp-star{color:var(--star);font-size:22px;letter-spacing:2px}
+.tp-badge .sc{font-weight:800;font-size:18px}
+.tp-badge .lbl{font-size:13px;color:var(--body)}
+.tp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:820px){.tp-grid{grid-template-columns:1fr}}
+.tp-card{background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:26px}
+.tp-card .stars{color:var(--star);letter-spacing:3px;font-size:16px;margin-bottom:12px}
+.tp-card p{font-size:14.5px;color:var(--body);margin-bottom:16px}
+.tp-card .who{font-size:13.5px;font-weight:700}
+.tp-card .what{font-size:12.5px;color:#7d8a83}
+.demo-tag{display:inline-block;font-size:11px;font-weight:700;color:#9aa6a0;border:1px dashed #c8d2cc;border-radius:5px;padding:2px 8px;margin-left:10px;vertical-align:middle;letter-spacing:.5px}
+
+/* PARTNERS */
+.partners{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0}
+.partners h2{text-align:center;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#7d8a83;margin-bottom:30px}
+.p-logos{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap}
+.p-logo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 28px;font-weight:800;font-size:15px;color:#5a6862;letter-spacing:.3px}
+.p-logo img{height:46px;width:auto}
+
+/* TIIMI */
+.team-sec{background:#fff}
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.t-grid{grid-template-columns:1fr}}
+.t-card{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:30px;text-align:center;transition:all .2s}
+.t-card:hover{box-shadow:0 14px 34px rgba(7,64,42,.1);transform:translateY(-2px);background:#fff}
+.t-avatar{width:74px;height:74px;border-radius:50%;background:var(--green-darker);color:var(--glow);display:grid;place-items:center;font-weight:800;font-size:23px;margin:0 auto 16px}
+.t-card .nm{font-weight:800;font-size:18px}
+.t-card .rl{font-size:13.5px;color:var(--green);font-weight:700;margin-bottom:14px}
+.t-card a{display:block;color:var(--body);text-decoration:none;font-size:14.5px;padding:3px 0}
+.t-card a:hover{color:var(--green)}
+
+/* FAQ */
+.faq-sec{background:var(--bg-soft);border-top:1px solid var(--line)}
+.faq{max-width:780px;margin:0 auto}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:20px 24px;font-size:16px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;font-family:inherit;color:var(--ink)}
+.faq-q::after{content:"+";font-size:22px;color:var(--green);font-weight:600;transition:transform .25s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a p{padding:0 24px 20px;font-size:15px;color:var(--body)}
+.faq-item.open .faq-a{max-height:240px}
+
+/* CONTACT */
+.contact{background:var(--green-darker);color:#fff}
+.contact .eyebrow{color:var(--glow)}
+.contact .eyebrow::before{background:var(--glow)}
+.contact h2{color:#fff}
+.contact .sec-sub{color:#a8c5b6}
+.c-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;margin-top:40px}
+@media(max-width:860px){.c-grid{grid-template-columns:1fr}}
+.form-card{background:#fff;border-radius:16px;padding:36px;color:var(--ink)}
+.form-card label{display:block;font-size:13px;font-weight:800;margin:18px 0 6px}
+.form-card label:first-of-type{margin-top:0}
+.form-card .req{color:#c0392b}
+.form-card input,.form-card select,.form-card textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:8px;font-size:15px;font-family:inherit;background:var(--bg-soft)}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:2px solid var(--green);border-color:var(--green);background:#fff}
+.form-card textarea{min-height:120px;resize:vertical}
+.form-card .btn{width:100%;margin-top:26px}
+.form-note{font-size:12.5px;color:#7d8a83;margin-top:14px;text-align:center}
+.c-side h3{font-size:18px;font-weight:800;margin-bottom:18px;color:#fff}
+.c-line{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:16px 20px;margin-bottom:12px}
+.c-line .ic{font-size:20px}
+.c-line a{color:var(--glow);text-decoration:none;font-weight:700}
+.c-line .sub{font-size:13px;color:#a8c5b6}
+.c-free{background:var(--glow);color:var(--green-darker);border-radius:12px;padding:22px 24px;margin-top:22px;font-weight:700;font-size:15px;line-height:1.5}
+
+/* FOOTER */
+footer{background:#031b12;color:#7fa08f;padding:44px 0;font-size:14px}
+.f-grid{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.f-grid img{height:34px;width:auto;opacity:.9}
+footer a{color:var(--glow);text-decoration:none}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="#" aria-label="EA-Turvallisuuskyltti Oy">
+      <img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/Turvallisuuskyltti-Oy-Valkoinen-333.png" alt="EA-Turvallisuuskyltti Oy logo">
+    </a>
+    <div class="nav-links">
+      <a href="#kyltit">Kyltit</a>
+      <a href="#palvelu">Palvelu</a>
+      <a href="#arvostelut">Arvostelut</a>
+      <a href="#tiimi">Yhteystiedot</a>
+      <a href="#ukk">UKK</a>
+      <a href="#yhteys" class="nav-cta">Ilmainen kartoitus</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Turvallisuuden edelläkävijä · Koko Suomi</div>
+      <h1>Kiinteistön turvamerkinnät kuntoon — <em>avaimet käteen.</em></h1>
+      <p class="lead">EA-Turvallisuuskyltti Oy kartoittaa, toimittaa ja asentaa taloyhtiön kaikki turvallisuuskyltit. Isännöitsijälle yksi yhteydenotto riittää.</p>
+      <ul class="hero-points">
+        <li>Ilmainen kartoitus — ilman sitoumuksia</li>
+        <li>Määräysten mukaiset, jälkivalaisevat palomerkinnät</li>
+        <li>Ammattiasennus sovitussa aikataulussa</li>
+      </ul>
+      <div class="hero-ctas">
+        <a href="#yhteys" class="btn btn-primary">Pyydä ilmainen kartoitus</a>
+        <a href="#kyltit" class="btn btn-outline">Katso valikoima</a>
+      </div>
+    </div>
+    <figure class="hero-img">
+      <img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/kyltit2.png" alt="EA-Turvallisuuskyltti Oy:n turvallisuuskylttejä: poistumistie-, väestönsuoja- ja palomerkintäkylttejä">
+      <figcaption>Valikoimamme kylttejä — palomerkinnät aina jälkivalaisevina.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- GLOW DEMO -->
+<section class="glow-sec" aria-label="Jälkivalaisevat kyltit">
+  <div class="wrap glow-grid">
+    <div>
+      <div class="eyebrow">Jälkivalaisevat merkinnät</div>
+      <h2 class="sec-title">Kun valot sammuvat, meidän kyltit näkyvät.</h2>
+      <p class="sec-sub">Kaikki toimittamamme palomerkinnät ovat jälkivalaisevia: ne lataavat valoa normaalisti ja hohtavat pimeässä. Hätätilanteessa ja sähkökatkossa poistumistiet pysyvät näkyvissä — juuri silloin kun sillä on eniten väliä.</p>
+      <p class="sec-sub" style="margin-top:14px"><strong style="color:#fff">Kokeile itse</strong> — sammuta valot ja katso mitä tapahtuu.</p>
+    </div>
+    <div class="demo" id="demo">
+      <div class="demo-stage">
+        <div class="sign"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Poistumistie-kyltti"><rect width="100" height="100" rx="8" fill="#00843d"/><circle cx="38" cy="26" r="7" fill="#fff"/><path d="M30 38 L44 36 L52 48 L62 50 L62 56 L48 54 L42 46 L38 60 L46 76 L40 80 L30 62 L26 76 L18 74 L26 50 Z" fill="#fff"/><path d="M64 30 H86 V70 H64 V62 H78 V38 H64 Z" fill="#fff"/><path d="M56 46 L70 50 L56 54 Z" fill="#fff"/></svg></div>
+        <div class="sign"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sammutin-kyltti"><rect width="100" height="100" rx="8" fill="#c8102e"/><rect x="40" y="34" width="20" height="44" rx="6" fill="#fff"/><rect x="45" y="24" width="10" height="10" fill="#fff"/><path d="M55 26 L72 18 L72 24 L58 30 Z" fill="#fff"/></svg></div>
+        <div class="sign"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kerrosnumerokyltti 3"><rect width="100" height="100" rx="8" fill="#10203f"/><text x="50" y="68" font-size="52" font-weight="800" fill="#fff" text-anchor="middle" font-family="Arial">3</text></svg></div>
+        <div class="sign"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Väestönsuoja-kyltti"><rect width="100" height="100" rx="8" fill="#1455c0"/><path d="M50 18 L82 74 H18 Z" fill="#ff7900"/><path d="M50 34 L70 68 H30 Z" fill="#1455c0"/></svg></div>
+      </div>
+      <div class="demo-bar">
+        <div class="demo-label"><strong>Jälkivalaiseva pinta</strong> — toimii ilman sähköä</div>
+        <button class="switch" id="lightSwitch" aria-pressed="false"><span class="dot"></span><span id="switchText">Sammuta valot</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVAIMET KÄTEEN -->
+<section class="band" id="palvelu">
+  <div class="wrap">
+    <div class="band-head">
+      <div class="free">KARTOITUS AINA ILMAISEKSI</div>
+      <h2>Avaimet käteen — yksi yhteydenotto riittää</h2>
+      <p>Ei selvittelyä, ei kilpailutusta, ei välikäsiä. Me hoidamme koko ketjun alusta loppuun.</p>
+    </div>
+    <div class="band-grid">
+      <div class="band-card">
+        <div class="num">1</div>
+        <h3>Ilmainen kartoitus</h3>
+        <p>Käymme kohteessa ja käymme läpi kaikki puuttuvat tai vanhentuneet merkinnät. Saat selkeän listan ja kiinteän tarjouksen — täysin ilman sitoumuksia.</p>
+      </div>
+      <div class="band-card">
+        <div class="num">2</div>
+        <h3>Määräysten mukaiset kyltit</h3>
+        <p>Toimitamme laadukkaat, vaatimukset täyttävät kyltit. Palomerkinnät aina jälkivalaisevina.</p>
+      </div>
+      <div class="band-card">
+        <div class="num">3</div>
+        <h3>Ammattiasennus</h3>
+        <p>Asennamme kaiken paikalleen siististi ja sovitussa aikataulussa. Kohde valmis kerralla.</p>
+      </div>
+    </div>
+    <div class="band-cta"><a href="#yhteys" class="btn btn-glow">Varaa ilmainen kartoitus →</a></div>
+  </div>
+</section>
+
+<!-- KYLTIT -->
+<section class="kyltit" id="kyltit">
+  <div class="wrap">
+    <div class="eyebrow">Valikoima</div>
+    <h2 class="sec-title">Kaikki kiinteistön merkinnät yhdestä paikasta</h2>
+    <p class="sec-sub">Uudiskohteisiin ja vanhojen merkintöjen päivitykseen — taloyhtiöt, liikekiinteistöt ja teollisuus.</p>
+    <div class="k-grid">
+      <div class="k-tile"><div class="ic">💧</div><div class="nm">Vesi</div></div>
+      <div class="k-tile"><div class="ic">🔥</div><div class="nm">Lämpö</div></div>
+      <div class="k-tile"><div class="ic">⚡</div><div class="nm">Sähkö</div></div>
+      <div class="k-tile"><div class="ic">🛡️</div><div class="nm">Väestönsuoja</div></div>
+      <div class="k-tile"><div class="ic">🔢</div><div class="nm">Kerrosnumerot</div></div>
+      <div class="k-tile"><div class="ic">🛑</div><div class="nm">IV-hätäseis</div></div>
+      <div class="k-tile"><div class="ic">➡️</div><div class="nm">Sininen nuoli</div></div>
+      <div class="k-tile"><div class="ic">🚪</div><div class="nm">Poistumistie</div></div>
+      <div class="k-tile"><div class="ic">🧯</div><div class="nm">Sammutin</div></div>
+      <div class="k-tile"><div class="ic">🚒</div><div class="nm">Paloposti</div></div>
+      <div class="k-tile"><div class="ic">🚧</div><div class="nm">Liikennemerkit</div></div>
+      <div class="k-tile"><div class="ic">🏠</div><div class="nm">Osoitekyltit</div></div>
+      <div class="k-tile"><div class="ic">🗺️</div><div class="nm">Kartat</div></div>
+    </div>
+    <div class="k-note"><div class="pulse"></div><div>Kaikki palomerkinnät ovat <strong>jälkivalaisevia</strong> — ne ohjaavat ulos myös sähkökatkon aikana.</div></div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-sec" id="video">
+  <div class="wrap video-grid">
+    <div class="vframe" onclick="videoNote()" role="button" tabindex="0" aria-label="Asennusvideo">
+      <div class="vbg"><img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/kyltit2.png" alt=""></div>
+      <div class="vplay"><div class="pbtn"></div></div>
+      <div class="vtag" id="vtag">▶ Katso: kohteen kyltitys alusta loppuun (1:24)</div>
+    </div>
+    <div>
+      <div class="eyebrow">Näin työ tehdään</div>
+      <h2 class="sec-title">Katso miten kohde kyltitetään</h2>
+      <p class="sec-sub">Lyhyt video näyttää koko prosessin: kartoituksesta valmiiseen asennukseen.</p>
+      <ul class="vlist">
+        <li>Vanhojen merkintöjen tarkistus ja dokumentointi</li>
+        <li>Uusien kylttien paikkojen merkintä määräysten mukaan</li>
+        <li>Siisti asennus — ei jälkiä, ei sotkua</li>
+        <li>Lopputarkastus yhdessä tilaajan kanssa</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRUSTPILOT -->
+<section class="tp-sec" id="arvostelut">
+  <div class="wrap">
+    <div class="eyebrow">Asiakkaiden kokemuksia</div>
+    <h2 class="sec-title">Isännöitsijät luottavat meihin <span class="demo-tag">DEMOSISÄLTÖ</span></h2>
+    <div class="tp-head">
+      <div class="tp-badge">
+        <span class="tp-star">★★★★★</span>
+        <div><div class="sc">4,9 / 5</div><div class="lbl">Trustpilot · 27 arvostelua</div></div>
+      </div>
+    </div>
+    <div class="tp-grid">
+      <div class="tp-card">
+        <div class="stars">★★★★★</div>
+        <p>"Koko taloyhtiön kyltit uusittiin viikossa. Kartoitus oli perusteellinen ja tarjous selkeä — ei mitään yllätyksiä laskussa. Suosittelen lämpimästi muillekin isännöitsijöille."</p>
+        <div class="who">Marko T.</div>
+        <div class="what">Isännöitsijä, Pohjanmaa</div>
+      </div>
+      <div class="tp-card">
+        <div class="stars">★★★★★</div>
+        <p>"Nopea ja ammattitaitoinen porukka. Väestönsuojan ja kerrosnumeroiden merkinnät hoituivat kerralla kuntoon kolmessa kohteessa. Yhteydenpito pelasi koko ajan."</p>
+        <div class="who">Sanna K.</div>
+        <div class="what">Kiinteistöpäällikkö, Keski-Suomi</div>
+      </div>
+      <div class="tp-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Asennus tehtiin sovitussa aikataulussa ja jälki oli siistiä. Pieni viive tarjouksen kanssa kesälomien takia, mutta lopputulos erinomainen."</p>
+        <div class="who">Juha R.</div>
+        <div class="what">Hallituksen puheenjohtaja, taloyhtiö</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners" aria-label="Yhteistyökumppanit">
+  <div class="wrap">
+    <h2>Yhteistyössä <span class="demo-tag">DEMOSISÄLTÖ</span></h2>
+    <div class="p-logos">
+      <div class="p-logo"><img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/luotettava_kumppani_logo_792x393.png" alt="Luotettava Kumppani -ohjelman jäsen"></div>
+      <div class="p-logo">Isännöinti Pohjola Oy</div>
+      <div class="p-logo">KP Kiinteistöpalvelut</div>
+      <div class="p-logo">Rakennus Visio Oy</div>
+      <div class="p-logo">Talohallinta Lehtinen</div>
+    </div>
+  </div>
+</section>
+
+<!-- TIIMI -->
+<section class="team-sec" id="tiimi">
+  <div class="wrap">
+    <div class="eyebrow">Yhteystiedot</div>
+    <h2 class="sec-title">Tunnet aina tekijän</h2>
+    <p class="sec-sub">Meillä ei ole vaihdetta eikä tikettijonoa — soitat suoraan ihmiselle joka hoitaa asiasi.</p>
+    <div class="t-grid" style="margin-top:36px">
+      <div class="t-card">
+        <div class="t-avatar">EA</div>
+        <div class="nm">Emil Apunen</div>
+        <div class="rl">Toimitusjohtaja</div>
+        <a href="#yhteys">Yhteydenotot lomakkeella</a>
+      </div>
+      <div class="t-card">
+        <div class="t-avatar">TA</div>
+        <div class="nm">Tom Apunen</div>
+        <div class="rl">Myyntipäällikkö</div>
+        <a href="tel:+358401290801">📞 040 129 0801</a>
+        <a href="mailto:tom@eaturvallisuus.fi">✉️ tom@eaturvallisuus.fi</a>
+      </div>
+      <div class="t-card">
+        <div class="t-avatar">JT</div>
+        <div class="nm">Juho Tiala</div>
+        <div class="rl">Myyjä / Asentaja</div>
+        <a href="tel:+358405511676">📞 040 551 1676</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec" id="ukk">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:40px">
+      <div class="eyebrow" style="justify-content:center">Usein kysytyt kysymykset</div>
+      <h2 class="sec-title">Vastaukset yleisimpiin kysymyksiin</h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-q">Mitä ilmainen kartoitus tarkoittaa käytännössä?</button>
+        <div class="faq-a"><p>Käymme kohteessanne ja tarkistamme kaikki turvallisuusmerkinnät: mitä puuttuu, mikä on vanhentunut ja mikä ei täytä nykyvaatimuksia. Saatte selkeän listan ja kiinteän tarjouksen. Kartoitus ei velvoita tilaamaan mitään.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Mitä jälkivalaiseva kyltti tarkoittaa?</button>
+        <div class="faq-a"><p>Jälkivalaiseva pinta lataa itseensä valoa normaalivalaistuksessa ja hohtaa pimeässä ilman sähköä. Sähkökatkon tai tulipalon aikana poistumistiemerkinnät pysyvät näkyvissä — juuri silloin kun niitä eniten tarvitaan. Kaikki toimittamamme palomerkinnät ovat jälkivalaisevia.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Toimitteko myös meidän paikkakunnalla?</button>
+        <div class="faq-a"><p>Kyllä — toimimme koko Suomen alueella yhteistyössä isännöintiyritysten kanssa. Ota yhteyttä niin sovitaan kartoitusajankohta.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Kuinka nopeasti asennus onnistuu?</button>
+        <div class="faq-a"><p>Tyypillisesti kartoituksesta valmiiseen asennukseen menee 1–3 viikkoa kohteen koosta riippuen. Sovimme aikataulun aina etukäteen ja pidämme siitä kiinni.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Kuka vastaa siitä, että kyltit täyttävät määräykset?</button>
+        <div class="faq-a"><p>Me. Toimittamamme kyltit ovat voimassa olevien vaatimusten mukaisia, ja kartoituksessa käymme läpi mitä merkintöjä kohteessa lain mukaan pitää olla. Taloyhtiön ei tarvitse selvittää määräyksiä itse.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Mitä asennus maksaa?</button>
+        <div class="faq-a"><p>Hinta riippuu kohteen koosta ja kylttien määrästä. Siksi kartoitus on ilmainen — sen jälkeen saatte kiinteän tarjouksen, jossa ei ole piilokuluja. Tarjous ei velvoita mihinkään.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YHTEYDENOTTO -->
+<section class="contact" id="yhteys">
+  <div class="wrap">
+    <div class="eyebrow">Ota yhteyttä</div>
+    <h2 class="sec-title">Pyydä ilmainen kartoitus</h2>
+    <p class="sec-sub">Täytä lomake niin olemme yhteydessä yhden arkipäivän sisällä — tai soita suoraan.</p>
+    <div class="c-grid">
+      <div class="form-card">
+        <label for="aihe">Aihe <span class="req">*</span></label>
+        <select id="aihe">
+          <option>Ilmainen kartoitus</option>
+          <option>Tarjouspyyntö — kyltit</option>
+          <option>Tilaus</option>
+          <option>Muu yhteydenotto</option>
+        </select>
+        <label for="nimi">Nimi <span class="req">*</span></label>
+        <input id="nimi" type="text" placeholder="Etunimi Sukunimi" autocomplete="name">
+        <label for="yritys">Yritys / taloyhtiö</label>
+        <input id="yritys" type="text" placeholder="esim. As Oy Esimerkkitalo">
+        <label for="puh">Puhelinnumero</label>
+        <input id="puh" type="tel" placeholder="040 123 4567" autocomplete="tel">
+        <label for="email">Sähköposti <span class="req">*</span></label>
+        <input id="email" type="email" placeholder="nimi@yritys.fi" autocomplete="email">
+        <label for="viesti">Viesti <span class="req">*</span></label>
+        <textarea id="viesti" placeholder="Kerro lyhyesti kohteesta — paikkakunta, kohteen tyyppi ja koko."></textarea>
+        <button class="btn btn-primary" onclick="lahetys()">Lähetä yhteydenottopyyntö</button>
+        <div class="form-note" id="formNote">Vastaamme yleensä saman arkipäivän aikana.</div>
+      </div>
+      <div class="c-side">
+        <h3>Tai soita suoraan</h3>
+        <div class="c-line"><span class="ic">📞</span><div><a href="tel:+358401290801">040 129 0801</a><div class="sub">Tom Apunen · Myyntipäällikkö</div></div></div>
+        <div class="c-line"><span class="ic">📞</span><div><a href="tel:+358405511676">040 551 1676</a><div class="sub">Juho Tiala · Myyjä / Asentaja</div></div></div>
+        <div class="c-line"><span class="ic">✉️</span><div><a href="mailto:tom@eaturvallisuus.fi">tom@eaturvallisuus.fi</a><div class="sub">Sähköposti</div></div></div>
+        <div class="c-free">✓ Kartoitus on aina ilmainen eikä velvoita mihinkään. Saat kiinteän tarjouksen ilman piilokuluja.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap f-grid">
+    <img src="https://eaturvallisuus.fi/wp-content/uploads/2023/03/Turvallisuuskyltti-Oy-Valkoinen-333.png" alt="EA-Turvallisuuskyltti Oy">
+    <div>© 2026 EA-Turvallisuuskyltti Oy · Perustettu 2022 · Kokemusta alalta 8+ vuotta · Koko Suomi</div>
+    <a href="#yhteys">Pyydä ilmainen kartoitus</a>
+  </div>
+</footer>
+
+<script>
+// Valokatkaisin
+const demo=document.getElementById('demo');
+const sw=document.getElementById('lightSwitch');
+const swText=document.getElementById('switchText');
+sw.addEventListener('click',()=>{
+  demo.classList.toggle('dark');
+  const dark=demo.classList.contains('dark');
+  swText.textContent=dark?'Sytytä valot':'Sammuta valot';
+  sw.setAttribute('aria-pressed',dark);
+});
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));
+});
+// Video placeholder
+function videoNote(){
+  document.getElementById('vtag').textContent='Demo — varsinainen asennusvideo kuvataan ja lisätään julkaisuvaiheessa.';
+}
+// Lomake (demo)
+function lahetys(){
+  document.getElementById('formNote').textContent='Kiitos! (Demo — lomake kytketään sähköpostiin julkaisuvaiheessa.)';
+}
+</script>
+</body>
+</html>
