@@ -15,11 +15,11 @@
     brandName: "Sivuverstas",
     subtitle: "Vastaan yleensä heti",
     greeting:
-      "Hei! 👋 Olen Sivuverstaan apuri. Voin kertoa paketeista ja hinnoista, neuvoa sopivan ratkaisun tai ohjata kokeilemaan ilmaista demoa. Mitä haluaisit tietää?",
+      "Hei! 👋 Olen Sivuverstaan apuri. Voin kertoa paketeista ja hinnoista, neuvoa sopivan ratkaisun tai auttaa pyytämään ilmaisen tarjouksen. Mitä haluaisit tietää?",
     quickReplies: [
       "Paljonko maksaa?",
       "Mitä teette?",
-      "Kokeile demoa",
+      "Ilmainen arvio",
       "Kuinka nopeasti?",
     ],
     // Sivuverstaan brändivärit (sininen + oranjessi aksentti)
@@ -53,8 +53,8 @@
     {
       keys: ["demo", "kokeil", "näe sivu", "esikatselu", "testaa"],
       reply:
-        "Kokeile ilmaiseksi! Kuvaile yrityksesi parilla sanalla sivun yläosan kentässä, niin näet valmiin demosivun ruudulla sekunneissa — ennen kuin maksat mitään. Jos pidät siitä, vien sen liveksi.",
-      action: "demo",
+        "Saat ilmaisen ehdotuksen yrityksesi sivuista — näet sen ennen kuin maksat senttiäkään. Haluatko pyytää tarjouksen tai ilmaisen arvion nykyisestä sivustasi?",
+      action: "review",
     },
     {
       keys: ["kestää", "aikataulu", "milloin", "nopea", "kuinka kauan", "valmis", "kiire", "deadline"],
@@ -102,7 +102,7 @@
   ];
 
   const FALLBACK =
-    "Hyvä kysymys! Välitän sen mielelläni Jerelle. Voit jättää yhteystietosi lomakkeelle tai laittaa sähköpostia osoitteeseen sivuverstas@gmail.com. Sillä välin — haluaisitko kokeilla ilmaista demoa yrityksellesi?";
+    "Hyvä kysymys! Välitän sen mielelläni Jerelle. Voit jättää yhteystietosi lomakkeelle tai laittaa sähköpostia osoitteeseen sivuverstas@gmail.com. Sillä välin — haluaisitko ilmaisen arvion nykyisestä sivustasi?";
 
   function demoReply(text) {
     const t = (text || "").toLowerCase();
@@ -110,7 +110,7 @@
       if (rule.keys.some((k) => t.includes(k))) return rule;
     }
     if (/^(hei|moi|terve|morjes|hello|hi|moikka)\b/.test(t)) {
-      return { reply: "Hei! Mukava kun otit yhteyttä. Miten voin auttaa — paketit, hinnat vai ilmainen demo?" };
+      return { reply: "Hei! Mukava kun otit yhteyttä. Miten voin auttaa — paketit, hinnat vai ilmainen arvio?" };
     }
     if (/(kiitos|kiitti|thanks|kiva)/.test(t)) {
       return { reply: "Ole hyvä! 😊 Jos jokin jäi mietityttämään, kysy rohkeasti." };
