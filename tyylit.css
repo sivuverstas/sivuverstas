@@ -1,5 +1,4 @@
 /* Sivuverstas – jaetut tyylit (poimittu index.html:stä). Käytä uusilla sivuilla: <link rel="stylesheet" href="/tyylit.css"> */
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap');
 :root{
   --ink:#16181D;--muted:#6A6F7B;--line:#E4E2DB;--paper:#F1EFE9;--surface:#FFF;
   --accent:#1F4BFF;--accent-d:#1838C9;--pop:#FF5A2C;--ok:#16A34A;--soft:#FAF8F4;

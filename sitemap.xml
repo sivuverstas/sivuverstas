@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sivuverstas.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://sivuverstas.com/verkkosivut-yritykselle/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://sivuverstas.com/seo-palvelu/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://sivuverstas.com/hinnat/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/verkkosivujen-hinta/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/kuinka-kauan-verkkosivut-kestaa/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/verkkosivujen-virheet/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/tarvitseeko-yritys-verkkosivut/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/miten-nakya-googlessa/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/paikallinen-seo/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/google-yritysprofiili/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/wordpress-vai-oma-sivu/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/kotisivut-vai-some/</loc><priority>0.6</priority></url>
-  <url><loc>https://sivuverstas.com/blogi/hyva-yrityssivu-tarkistuslista/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.sivuverstas.com/verkkosivut-yritykselle/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.sivuverstas.com/seo-palvelu/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.sivuverstas.com/hinnat/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/verkkosivujen-hinta/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/kuinka-kauan-verkkosivut-kestaa/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/verkkosivujen-virheet/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/tarvitseeko-yritys-verkkosivut/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/miten-nakya-googlessa/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/paikallinen-seo/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/google-yritysprofiili/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/wordpress-vai-oma-sivu/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/kotisivut-vai-some/</loc><priority>0.6</priority></url>
+  <url><loc>https://www.sivuverstas.com/blogi/hyva-yrityssivu-tarkistuslista/</loc><priority>0.6</priority></url>
 </urlset>

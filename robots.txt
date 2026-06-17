@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sivuverstas.com/sitemap.xml
+Sitemap: https://www.sivuverstas.com/sitemap.xml
