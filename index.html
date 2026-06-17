@@ -5,6 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sivuverstas — Edulliset verkkosivut pienyrityksille</title>
 <meta name="description" content="Edulliset, kiinteähintaiset verkkosivut pienyrityksille. Kokeile: kuvaile yrityksesi ja näe demo sekunneissa. Valmis viikossa." />
+
+<!-- ===== SEO: päivitä osoite (sivuverstas.com) jos domainisi on eri ===== -->
+<link rel="canonical" href="https://sivuverstas.com/" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#1F4BFF" />
+<meta name="author" content="Jere Levaniemi — Sivuverstas" />
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sivuverstas" />
+<meta property="og:locale" content="fi_FI" />
+<meta property="og:url" content="https://sivuverstas.com/" />
+<meta property="og:title" content="Sivuverstas — Edulliset verkkosivut pienyrityksille" />
+<meta property="og:description" content="Näe sivusi ennen kuin maksat. Kiinteät hinnat alkaen 490 €, valmis jopa viikossa. Kokeile ilmaista demoa ja ilmaista sivuarviota." />
+<meta property="og:image" content="https://sivuverstas.com/og-kuva.jpg" />
+<meta property="og:image:alt" content="Sivuverstas — edulliset verkkosivut pienyrityksille" />
+
+<!-- Twitter/X-kortti -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sivuverstas — Edulliset verkkosivut pienyrityksille" />
+<meta name="twitter:description" content="Näe sivusi ennen kuin maksat. Kiinteät hinnat alkaen 490 €, valmis jopa viikossa." />
+<meta name="twitter:image" content="https://sivuverstas.com/og-kuva.jpg" />
+
+<!-- Favicon (lisää favicon.ico ja icon.svg kansioon) -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<!-- Fonttien nopeampi lataus -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- Rakenteinen data: paikallinen yritys (parantaa Google-näkyvyyttä) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Sivuverstas",
+  "description": "Edulliset, kiinteähintaiset verkkosivut pienyrityksille. Valmis jopa viikossa.",
+  "url": "https://sivuverstas.com/",
+  "image": "https://sivuverstas.com/og-kuva.jpg",
+  "email": "sivuverstas@gmail.com",
+  "telephone": "+358406614983",
+  "priceRange": "490€–1490€",
+  "areaServed": { "@type": "Country", "name": "Suomi" },
+  "founder": { "@type": "Person", "name": "Jere Levaniemi" },
+  "vatID": "FI34113054",
+  "sameAs": [
+    "https://www.instagram.com/sivuverstas/"
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "name": "Pienet sivut", "price": "490", "priceCurrency": "EUR" },
+    { "@type": "Offer", "name": "Keskikokoiset sivut", "price": "890", "priceCurrency": "EUR" },
+    { "@type": "Offer", "name": "Suuret sivut", "price": "1490", "priceCurrency": "EUR" }
+  ]
+}
+</script>
+
+<!-- Rakenteinen data: usein kysytyt (voi tuoda rich-snippetit hakutuloksiin) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Kuka omistaa domainin ja sivun?", "acceptedAnswer": { "@type": "Answer", "text": "Sinä. Domain rekisteröidään sinun nimiisi ja sivu on sinun. Et ole sidottu meihin." } },
+    { "@type": "Question", "name": "Entä jos en tykkää lopputuloksesta?", "acceptedAnswer": { "@type": "Answer", "text": "Näet demon ennen maksua ja hiomme sen yhdessä kuntoon. Maksat vasta kun olet tyytyväinen — tyytyväisyystakuu." } },
+    { "@type": "Question", "name": "Kauanko sivun tekeminen kestää?", "acceptedAnswer": { "@type": "Answer", "text": "Useimmiten valmista on noin viikossa siitä, kun sisällöt ovat kasassa. Kiireellisetkin aikataulut onnistuvat usein." } },
+    { "@type": "Question", "name": "Pitääkö minun osata jotain teknistä?", "acceptedAnswer": { "@type": "Answer", "text": "Ei. Hoidamme domainin, julkaisun ja tekniikan puolestasi. Sinä keskityt omaan työhösi." } },
+    { "@type": "Question", "name": "Mitä ylläpito sisältää?", "acceptedAnswer": { "@type": "Answer", "text": "Hosting, varmuuskopiot, tietoturvapäivitykset ja pienet sisältömuutokset. Pitää sivun nopeana ja turvallisena." } },
+    { "@type": "Question", "name": "Miten maksu tapahtuu?", "acceptedAnswer": { "@type": "Answer", "text": "Lasku sähköpostiin. Sovitaan selkeästi etukäteen — ei piilokuluja." } }
+  ]
+}
+</script>
+<!-- ===== /SEO ===== -->
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap');
 :root{
@@ -208,6 +283,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:va
   <div class="wrap nav">
     <div class="logo">Sivu<span>verstas</span></div>
     <nav class="navlinks">
+      <a href="#sivuarvio">Ilmainen arvio</a>
       <a href="#hinnasto">Hinnasto</a>
       <a href="#paketti">Rakenna paketti</a>
       <a href="#faq">UKK</a>
@@ -246,6 +322,29 @@ footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:va
     <div class="screen" id="screen">
       <div class="empty"><b>Demosi ilmestyy tähän.</b><span>Kirjoita yläpuolelle ja paina “Luo demo”.</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ILMAINEN SIVUARVIO (liidimagneetti) -->
+<section class="block" id="sivuarvio">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Ilmainen sivuarvio</div>
+      <h2>Onko sivusi kunnossa? Ota selvää 30 sekunnissa.</h2>
+      <p>Syötä nykyisen sivusi osoite — analysoimme nopeuden, mobiilin, hakukonenäkyvyyden ja somejaettavuuden, ja saat konkreettiset parannusehdotukset. Täysin ilmaiseksi.</p>
+    </div>
+    <div class="console" style="max-width:620px">
+      <div class="sa-form">
+        <span class="lbl">Sivusi osoite</span>
+        <input id="saUrl" class="email" type="url" inputmode="url" placeholder="www.yrityksesi.fi" aria-label="Sivun osoite" />
+        <div class="sa-row">
+          <input id="saEmail" class="email" type="email" inputmode="email" placeholder="Sähköpostisi (lähetämme raportin)" aria-label="Sähköposti" />
+          <button id="saGo" class="btn alt"><span class="dot"></span><span id="saGoLabel">Tee ilmainen arvio</span></button>
+        </div>
+        <div id="saStatus" class="sa-status"></div>
+      </div>
+    </div>
+    <div id="saResult" class="sa-result"></div>
   </div>
 </section>
 
@@ -588,6 +687,8 @@ $("f_send").onclick=async function(){
 
 document.getElementById("yr").textContent=new Date().getFullYear();
 </script>
+<!-- Ilmainen sivuarvio (liidimagneetti) -->
+<script src="sivuarvio.js" defer></script>
 <!-- AI-chatbotti -->
 <script src="sivuverstas-chat.js" defer></script>
 </body>

@@ -31,6 +31,8 @@
     apiUrl: "",
     // Mihin "Kokeile demoa" -nappi vie (hero-konsoli sivun ylhäällä)
     demoUrl: "#",
+    // Mihin "Tee ilmainen sivuarvio" -nappi vie
+    reviewUrl: "#sivuarvio",
     // Mihin "Ota yhteyttä" -nappi vie
     contactUrl: "#yhteys",
   };
@@ -62,8 +64,8 @@
     {
       keys: ["seo", "google", "hakukone", "näkyvyys", "löydy"],
       reply:
-        "Keskikokoiseen ja suureen pakettiin kuuluu hakukoneoptimointi (SEO): tekninen optimointi, otsikot, meta-tiedot, nopeus ja mobiili. Pieneen kuuluu perus-Google-näkyvyys, ja SEO:n saa lisäosana (+200 €). Haluatko parantaa nykyisen sivusi näkyvyyttä?",
-      action: "contact",
+        "Keskikokoiseen ja suureen pakettiin kuuluu hakukoneoptimointi (SEO): tekninen optimointi, otsikot, meta-tiedot, nopeus ja mobiili. Pieneen kuuluu perus-Google-näkyvyys, ja SEO:n saa lisäosana (+200 €). Haluatko ilmaisen arvion nykyisen sivusi SEO-kunnosta?",
+      action: "review",
     },
     {
       keys: ["yhteys", "soita", "puhelin", "sähköposti", "email", "tavoit", "ihminen", "whatsapp"],
@@ -235,6 +237,7 @@
 
     function ctaFor(action) {
       if (action === "demo") return { href: CONFIG.demoUrl, label: "Kokeile ilmaista demoa →" };
+      if (action === "review") return { href: CONFIG.reviewUrl, label: "Tee ilmainen sivuarvio →" };
       if (action === "contact") return { href: CONFIG.contactUrl, label: "Ota yhteyttä →" };
       return null;
     }
